@@ -1,0 +1,34 @@
+<header>
+
+    <div class="navbar navbar-dark bg-success ">
+    <div class="navbar-brand align-item-center d-flex">
+     <i style="font-size: 40px;"class="fa-solid fa-dragon">&nbsp;</i>
+
+
+    <strong>PROJECT2</strong>
+
+    <div class="form-group">
+    <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="search products">
+    </div>
+
+    <span class="fas fa-search search-icon"></span>     <!-- wacth minute16:23fix the position of the icone  -->
+
+    
+    
+     </div>
+
+      <!-- I have put the login botton next to the car  -->
+
+        <button class="byn btn-green">
+            <i style="font-size: 40px;"class="fa fa-fw fa-user"></i>
+             <div style="font-size: 10px;" class="badge bg-danger">Name</div>
+        </button>
+
+
+<button class="byn btn-green"  routerLink="cart">
+    <i style="font-size: 40px;"class="fa-solid fa-cart-shopping"></i>
+     <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
+</button>
+ </div>
+
+</header>
